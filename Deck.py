@@ -10,7 +10,8 @@ class Deck:
         self.cards = []
         self.total_cards = 52
         self.card_drawn = Card(0, 0);
-        for card_val in range(1, 14):
+        #since aces are the highest card, 14=ace
+        for card_val in range(2, 15):
             for suit in range(1, 5):
                 self.cards.append(Card(card_val, suit))
 

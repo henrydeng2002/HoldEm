@@ -6,7 +6,11 @@ from HoldemGame import HoldemGame
 
 def main():
     game = HoldemGame()
-    game.play()
+    game.startGame()
+    playing = True
+    while(playing):
+        playing = game.play()
+        game.reset()
 
 if __name__ == '__main__':
     main()
